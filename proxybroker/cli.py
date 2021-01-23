@@ -406,6 +406,10 @@ def cli(args=sys.argv[1:]):
                 limit=ns.limit,
             )
         )
+    if ns.command == 'stats':
+        tasks.append(
+            broker.show_stats()
+        )
     elif ns.command == 'grab':
         tasks.append(broker.grab(countries=ns.countries, limit=ns.limit))
     elif ns.command == 'serve':
