@@ -46,6 +46,16 @@ def create_parser():
     add_format_arg(fparser_group)
     add_show_stats_arg(fparser_group)
     add_help_arg(fparser_group)
+    
+    
+    
+    stparser = subparsers.add_parser(
+        'stats',
+        add_help=False,
+        help='Check status',
+        description='Check status',
+    )
+     
 
     gparser = subparsers.add_parser(
         'grab',
