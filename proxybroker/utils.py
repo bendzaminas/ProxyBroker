@@ -18,6 +18,10 @@ DATA_DIR = os.path.join(BASE_DIR, 'data')
 
 log = logging.getLogger(__package__)
 
+fh = logging.FileHandler('proxybroker.log')
+fh.setLevel(logging.DEBUG)
+log.addHandler(fh)
+
 IPPattern = re.compile(
     r'(?:(?:25[0-5]|2[0-4]\d|[01]?\d\d?)\.){3}(?:25[0-5]|2[0-4]\d|[01]?\d\d?)'
 )
