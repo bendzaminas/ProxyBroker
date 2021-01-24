@@ -417,7 +417,7 @@ def cli(args=sys.argv[1:]):
             )
         )
     if ns.command == 'stats':
-        broker.show_stats(verbose=True)
+        broker.show_stats(self, verbose=True)
     elif ns.command == 'grab':
         tasks.append(broker.grab(countries=ns.countries, limit=ns.limit))
     elif ns.command == 'serve':
