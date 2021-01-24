@@ -15,6 +15,9 @@ from .errors import BadStatusLine
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 DATA_DIR = os.path.join(BASE_DIR, 'data')
+
+logging.basicConfig(filename=__log__, encoding='utf-8', level=logging.DEBUG)
+
 log = logging.getLogger(__package__)
 
 IPPattern = re.compile(
