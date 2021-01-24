@@ -23,7 +23,6 @@ __author_email__ = 'constverum@gmail.com'
 __url__ = 'https://github.com/constverum/ProxyBroker'
 __license__ = 'Apache License, Version 2.0'
 __copyright__ = 'Copyright 2015-2018 Constverum'
-__log__ = 'proxybroker.log'
 
 
 from .proxy import Proxy  # noqa
